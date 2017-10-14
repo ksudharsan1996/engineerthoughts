@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> ENGINEERTHOUGHTS </title>
+		<link rel="shortcut icon" href="C:\Users\sudharsan.kannan\Desktop\bench.jpg"/>
+		<style>	
+		body{
+			height: 1420px;
+			background: linear-gradient(to bottom left, #000066 0%, #006666 100%);
+		}
+		/*body{
+		background-color:#d4e7e4;}*/
+			ul.topnav li a.active{
+						border-bottom: 2px solid #87CEFA;
+					}
+			ul.topnav {
+					list-style-type: none;
+					margin: 0;
+					text-align:center;
+					padding: 0;
+					overflow: hidden;
+					//width: 100%;
+					background-color:#1C353D;
+				}
+			ul.topnav li {
+					float: left;
+				}
+			ul.topnav li a {
+					display: block;
+					color: #1CD3CD;
+					text-align: center;
+					margin: 50px 40px 0 0;
+					text-decoration: none;
+					font-size: 16px;
+					font-family:Century Gothic;
+				}
+
+			li a:hover {
+					color:#9c9c9c;
+					border-bottom: 2px solid #87CEFA;
+				}
+			.HEAD2{
+					
+					
+					font-family:Century Gothic;
+					color:#1CD3A7;
+					text-align:center;
+					}
+			.p2{
+				color:#1CD3CD;
+				font-size:20px;
+				text-align:justify;
+				margin:0 20px 0 20px;
+				font-family:Century Gothic;
+			}
+			.p3{
+				color:#A2EE2F;
+				font-size:20px;
+				text-align:justify;
+				margin:0 20px 0 20px;
+				font-family:Century Gothic;
+			}
+			.img2{
+			margin-left:20px;
+			max-width: 90%;
+			height: auto;
+			}
+			
+		@media screen and (max-width: 600px)
+				{
+				ul.topnav li {float: none;
+				}
+		</style>
+	</head>
+	<body>
+		<ul class = "topnav">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a href="scribbles.html">SCRIBBLES</a></li>
+			<li><a class="active" href="aboutus.html">ABOUT US</a></li>
+		</ul>
+		<br>	
+		
+		<p class="p2">This essay is just to get overall basic knowledge and programming aspect of CNC machines and its programming with a program at the end. This Instructable may be taken as a short notes of CNC and for refreshing material if you already have a knowledge on it.<br><br>
+		I think this would be greatly helpful for the Mechanical students who need to know about CNC and its important in Core Company and also a hobbyists knowing about it helps you a lot. Have taken efforts to give the correct informations which i learned ,but sorry if any errors present in this instructable....kindly forgive me as I am basically form Electrical Engineering. You may feel free to point it out if any.<br><br>
+		Moreover this is written in motive to share the known knowledge to the aspirants.So make use of it.<br><br>
+		Thus we move on from the very basic question of CNC.<br><br></p>
+		<p class="p3">What is CNC...? <br><br></p>
+			<p class="p2">CNC - Computer Numerical Control ,in which Machining is based on the computer controls(any controller).<br><Br></p>
+		<p class="p3">Why Number comes in play ?<br><br></p>
+			<p class="p2">This is a number based control where each number has the seperate Value. Each number is assigned to separate function and work. Which we will be seeing it in the upcoming steps.</p><br><br>
+		<p class="p3">Advantages of Learning CNC:<br><br>
+			<ul class="p2">
+				<li>As a Core Mechanical Engineer, It is very essential for you to know CNC to get placed in Core</li>
+				<li>Basics of CNC is only being used in the 3D printing Industry.</li>
+				<li>More for a Researchers or hobbyist to make new things, it is very essential for them to know some basic of CNC, to make prototype.</li>
+			</ul><br><br>
+		<p class="p3">INSIDE CNC:<br><br></p>
+			<p class="p2">The CNC basically constructed with the Controllers which determines various Machining Functions for each and every Machine Codes. (Mostly it might be a PLC -Programable Logic Controller)</p><br><br>
+		<p class="p3">The are mainly 2 main Controller companies, They are as follows<br><br></p>
+			<ul class="p2">
+				<li>FANUC CNC CONTROLLER</li>
+				<li>SINENUMERIK CONTROLLER (siemens brand)</li>
+			</ul><br><br>
+		<p class="p2">They are the Largest manufacturers of the CNC machine and CNC controllers in world. In INDIA many manufacturers use FANUC machines</p><br><br>
+		<p class="p3">Step 1: What Is Machining<br><br></p>
+		<img class="img2" src="C:\updated\cnc2.jpg"  width="460" height="345">
+		<img class="img2" src="C:\updated\cnc3.jpg"  width="460" height="345">
+		<p class="p2">Machining as simple can be said as a process of removal of the material form the work piece to get the desirable and needed shape. The Shape and Size of the output depends on the MOVEMENT OF THE TOOL or JOB and not because of the ROTATION.<br><br>
+		<p class="p3">The Machining process may be broadly classified as follows:<br><br></p>
+		<ul class="p2">
+				<li>Lathe machining-(JOB rotate and TOOL move)</li>
+				<li>Mill Machining-(JOB move and TOOL rotate)</li>
+				<li>Drill Machining-(JOB stationary and TOOL rotate)</li>
+			</ul><br><br>
+		<p class="p2">You may see the you tube videos for the good understanding about the working of the various Machining process.</p><br><br>
+		<p class="p3">NOTE:<br><br></p>
+				<ul class="p2">
+				<li>In this JOB means the material which you want to make to required shape and size.</li>
+				<li>"TOOL is simply a tool"</li>
+			</ul><br><br>
+		<p class="p2">As simple to understand : In your Home , Knife is a tool and vegetables or bread is job , (TOOL knife) which deforms the shape of (JOB vegetable )as required by (YOU the MACHINE).</p><br><br>
+	////<p class="p3">Step 2: CNC Classification<br><br></p>
+			<img class="img2" src="C:\updated\cnc4.jpg"  width="460" height="345">
+			<img class="img2" src="C:\updated\cnc5.jpg"  width="460" height="345">
+		<p class="p3">The CNC machine can be basically classified into two types as follows :<br><br></p>
+		<dl class="p2"> 
+			<dt class="p3">CNC Lathe Machine :</dt><br>
+				<dd>Horizontal Operations</dd>
+				<dd>JOB will rotate and TOOL will move.</dd>
+				<dd>Can be called as TURNING CENTRE.</dd><br>
+			<dt class="p3">CNC Milling Machine :</dt><br>
+				<dd>Vertical Operations.</dd>
+				<dd>JOB will move and TOOL will rotate..</dd>
+				<dd>Can be called as MACHINING CENTRE</dd>
+		</dl><br><br>
+	////<p class="p3">Step 3: CNC FUNCTIONS<br><br></p>
+			<img class="img2" src="C:\updated\cnc6.jpg"  width="460" height="345">
+		<p class="p2">CNC coding are basically in the Machine Level languages, there is a universal set of codes depending on the function and Operation the CNC does.</p><br><br>
+		<p class="p3">Function of the CNC machine can be classified broadly as follows:<br><br></p>
+			<ul class="p2">
+				<li>AUXILIARY FUNCTION(M-CODE)</li>
+				<li>PREPARATORY OR MAIN FUNCTION(G-CODE)</li>
+				<li>SPINDLE SPEED FUNCTION(S-CODE)</li>
+				<li>FEED FUNCTION(F-CODE)</li>
+				<li>TOOL FUNCTION(T-CODE)</li>
+			</ul><br><br>
+			<p class="p3">NOTE:<br><br></p>
+			<ul class="p2">
+				<li>Here I am focusing on the Lathe type CNC machines.</li>
+				<li>The code may change according to the CNC machines, some codes may be similar. So It is advised to see the Manual of the CNC manufacturer before proceeding any further.</li>
+				<li>Also it is required to know only very few CNC codes for understanding purpose only.</li>
+				<li>Most important codes may be printed on the CNC machine itself.</li>
+				
+			</ul><br><br>
+		</p>
+		<p class="p3">Step 4: AUXILIARY FUNCTION-(M CODE)<br><br></p>
+		<p class="p2">As the name indicates, the auxiliary function is subordinate actions in the CNC machine. It is also called as the M-CODE</p><br><br>
+		<p class="p3">Some of the examples of this function are:<br><br></p>
+			<ul class="p2">
+				<li>Spindle ON or OFF</li>
+				<li>Door Opening</li>
+				<li>Coolent Operation</li>
+							
+			</ul><br><br>
+		<p class="p3">Some of the Common M codes in all the CNC machine are as follows :<br><br></p>
+			<ul class="p2">
+				<li>M03- Spindle ON clockwise</li>
+				<li>M04-Spindle ON counter clockwise</li>
+				<li>M05- spindle OFF</li>
+				
+							
+			</ul><br><br>
+	</body>
+</html>
